@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string.h>
 #include <string>
+#include <cstdio>
 #include <cmath>
 #define MAX_N 1000
 #define MAX_CHAR_N 1000
@@ -34,30 +35,33 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-//  eden标准输入去除｜输出
 void deleteShu() {
     char _in[MAX_N][MAX_CHAR_N];
     int count = 0;
     bool start;
+    FILE * pFile;
+    pFile = fopen ("result.txt","w");
     while (getchar() != EOF) {
         gets(_in[count]);
         count++;
     }
     for (int i = 0; i < count; i++) {
         start = false;
-        for (int k = 0; k < strlen(_in[i]); k++) {
+        int length = strlen(_in[i]);
+        for (int k = 0; k < length; k++) {
             if (_in[i][k] == '|' && start == false) {
                 start = true;
             }
             else if (start == true) {
-                cout << _in[i][k];
+                fprintf (pFile, "%c", _in[i][k]);
             }
         }
-        cout << endl;
+        fprintf (pFile, "\n");
     }
+    fclose (pFile);
+    pFile = NULL;
 }
 
-//  eden答案前去除空格并增加序号输出
 void addSeNUM() {
     char _in[MAX_N][MAX_CHAR_N];
     int count = 0;
@@ -66,7 +70,6 @@ void addSeNUM() {
         gets(_in[count]);
         count++;
     }
-    //  这里补齐一下前面的0
     int seqMax = count;
     int countS = 0;
     int zeroOutNum;
@@ -86,7 +89,8 @@ void addSeNUM() {
         }
         cout << i + 1 << '|';
         start = false;
-        for (int k = 0; k < strlen(_in[i]); k++) {
+        int length = strlen(_in[i]);
+        for (int k = 0; k < length; k++) {
             if (_in[i][k] == '|' && start == false) {
                 start = true;
             }
