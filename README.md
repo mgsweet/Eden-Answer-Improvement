@@ -15,12 +15,8 @@ http://blog.csdn.net/qq_32802397/article/details/51167929
 #使用指南
 1.首先在命令行中运行应用，选择功能，输入1是去除，输入2是补充序号。然后把你要改变的内容全部复制到命令行即可。
 ##功能1演示
-![](https://raw.githubusercontent.com/mgsweet/Eden-Answer-Improvement/master/image/1.png)
-![](https://raw.githubusercontent.com/mgsweet/Eden-Answer-Improvement/master/image/1.1.png)
- ![](https://raw.githubusercontent.com/mgsweet/Eden-Answer-Improvement/master/image/1.2.png)
+![](https://raw.githubusercontent.com/mgsweet/Eden-Answer-Improvement/master/image/eden-improve.gif)
 
 ##功能2演示
 
- ![](https://raw.githubusercontent.com/mgsweet/Eden-Answer-Improvement/master/image/2.2.png)
- ![](https://raw.githubusercontent.com/mgsweet/Eden-Answer-Improvement/master/image/2.png)
- ![](https://raw.githubusercontent.com/mgsweet/Eden-Answer-Improvement/master/image/2.1.png)
+ ![](https://raw.githubusercontent.com/mgsweet/Eden-Answer-Improvement/master/image/eden-improve2.gif)
