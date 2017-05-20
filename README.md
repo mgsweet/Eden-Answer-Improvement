@@ -1,5 +1,5 @@
 # Eden-Answer-Improvement
-##Improve eden's answer
+## Improve eden's answer
 > 每次在eden上遇到输入很多的题目都感动时分疲倦，每次都要手动去处空格和‘｜’这些恶心的东西，所以，就搞了个小应用，可以帮助你去除这些恶心的东西,希望大家喜欢。
 
 *如果大家使用中遇到任何bug，十分希望大家在评论区或github上的issues里作出反馈，衷心感谢。*
